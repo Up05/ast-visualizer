@@ -17,7 +17,7 @@ If you're on Linux:
 
 The visualizer uses UDP sockets to communicate. So you will have to open up a socket and send text to port: `8779` on your `localhost`/`127.0.0.1`
 
-The program uses a lisp-like syntax, so any text inside of parentheses followed, optionally, by more parentheses with text. 
+The program uses a lisp-like syntax, i.e. any text inside of parentheses followed, optionally, by more parentheses with text. 
 Although `#` is a special character used in my amazing parsing algorithm! *dw bout it...*
 
 If you wanted to make a tree such as:
