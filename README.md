@@ -70,4 +70,6 @@ private static String zip(Ast ast) {
 }
 ```
 
+# Post-end clarity
+
 I have now (literally 5 minutes, since finishing this README.md) realized that I could  just have printed this in the terminal and would have gotten the same thing...
