@@ -32,7 +32,7 @@ Node :: struct {
 base_path : string
 
 main :: proc() {
-	os.set_current_directory(os.args[0][:strings.last_index(os.args[0], "/")])
+	os.set_working_directory(os.args[0][:strings.last_index(os.args[0], "/")])
 	logln("CWD:", os.args[0][:strings.last_index(os.args[0], "/")])
 	
     draw()
@@ -146,7 +146,7 @@ draw :: proc() {//{{{
 		buf_len, _, err_recv := net.recv_udp(input, buf) 
 
         if(err_recv == net.UDP_Recv_Error.Timeout) do continue 
-        else do fmt.assertf(err_recv == nil, "%d", err_recv)
+        else do fmt.assertf(err_recv == nil, "UDP receiving error! With code: %d", err_recv)
         
         frames_afk = 0
 		logln("buf:", string(buf[:buf_len]))

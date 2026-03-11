@@ -1,3 +1,3 @@
 #!/bin/sh
 clear
-odin run . -debug -o:none -lld
+odin run . -debug -o:minimal -linker:lld
